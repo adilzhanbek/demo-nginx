@@ -35,4 +35,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             docker kill webapp
-            docker run -d -p 80:80 --name webapp demo:nginx:${{ github.run_number }}
+            docker run -d -p 80:80 --name webapp demo-nginx:${{ github.run_number }}
